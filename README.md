@@ -1,6 +1,6 @@
-# InfoSec-Grid
+# LogLama
 
-InfoSec-Grid is a Python script that utilizes a Language Model (LLM) to check logs for compliance and other security breaches. It identifies security breaches in logs and generates reports based on a given ruleset.
+LogLama is a Python script that utilizes a Language Model (LLM) to check logs for compliance and other security breaches. It identifies security breaches in logs and generates reports based on a given ruleset.
 
 ## Features
 
