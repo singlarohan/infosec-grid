@@ -73,11 +73,12 @@ def main():
     breaches = identify_breaches_and_report(temp[0], temp[1])
     
     if breaches and breaches[0]:
-        print("Breaches detected:")
-        for breach in breaches:
-            if breach:
-                print(f"Log number: {breach[0]}, User_id: {breach[1]}\nDetails: \n{breach[2]}")
-    
+        with open("comp/breaches.txt", "w") as f:
+            f.write("Breaches detected:\n")
+            for breach in breaches:
+                if breach:
+                    f.write(f"Log number: {breach[0]}, User_id: {breach[1]}\nDetails:\n{breach[2]}\n\n")
+        print("Breaches saved in 'breaches.txt' file.")
     else:
         print("No breaches detected.")
 
