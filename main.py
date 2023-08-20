@@ -4,10 +4,9 @@ import LLMmodel
 def find_user_id(seq):
     import re
     # print(f"{seq['generated_text']}")
-    generated_text = seq['generated_text']
-    start_index = generated_text.find("user_id:") + len("user_id:")
+    start_index = seq.find("user_id:") + len("user_id:")
     # Extract the user_id
-    user_id = generated_text[start_index:].split()[0]
+    user_id = seq[start_index:].split()[0]
     user_id_match = re.search(r'^(\d+)[;:\s]', user_id)
     if user_id_match:
         user_id = user_id_match.group(1)
