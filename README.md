@@ -23,3 +23,11 @@ InfoSec-Grid is a Python script that utilizes a Language Model (LLM) to check lo
 2. Enter the path to the log file (PDF, CSV, or TXT) when prompted.
 3. Enter the path to the ruleset file (PDF, CSV, TXT, or JSON) when prompted
 4. After some time, the script will analyze the logs using the provided ruleset and generate breach reports if any breaches are detected. Breach details, including log number, user_id, and suggested fixes, will be outputted in a file under comp/breaches.txt.
+
+
+<!-- CONTACT -->
+## Contact
+- [Pragati Arora](mailto:pragatiarora314@gmail.com)
+- [Rohan Singla](mailto:rohansingla2003@gmail.com)
+
+Project Link: [https://github.com/singlarohan/infosec-grid](https://github.com/singlarohan/infosec-grid)
