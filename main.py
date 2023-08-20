@@ -40,11 +40,11 @@ def identify_breaches_and_report(logs, ruleset):
             user_id = find_user_id(LLMmodel.generate_response(idprompt, len(idprompt) + 25))
 
         for rule in ruleset:
-            prompt = f"Log: {concat_log}\nRule: {rule}\nDoes the log follow the rule? If not, provide an explanation or suggest a fix as following\nbreach:\nfix:\n"
+            prompt = f"Log: {concat_log}\nRule: {rule}\nDoes the log follow the rule? If yes say no_breach else provide an explanation or suggest a fix as following\nbreach:\nfix:\n"
             response = LLMmodel.generate_response(prompt, len(prompt) + 75)
             
             if "no_breach" not in response.lower():
-                index = response.index("### Solution:") + len("### Solution:")
+                index = response.index("Solution") + len("Solution")
                 response = response[index:]
 
                 breach_response += reduced_req_response(response)
