@@ -24,6 +24,8 @@ LogLma is a Python script that utilizes a Language Model (LLM) to check logs for
 3. Enter the path to the ruleset file (PDF, CSV, TXT, or JSON) when prompted
 4. After some time, the script will analyze the logs using the provided ruleset and generate breach reports if any breaches are detected. Breach details, including log number, user_id, and suggested fixes, will be outputted in a file under comp/breaches.txt.
 
+## Demo
+[Youtube link](https://youtu.be/yFkm-5amQwo)
 
 <!-- CONTACT -->
 ## Contact
